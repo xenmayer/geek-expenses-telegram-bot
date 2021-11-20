@@ -1,0 +1,10 @@
+coverage/
+npm-debug.log
+creds.json
+CREATOR.md
+README.md
+.git
+.eslintrc.cjs
+.idea
+.env
+.DS_Store

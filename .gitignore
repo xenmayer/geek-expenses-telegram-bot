@@ -1,0 +1,14 @@
+.idea
+node_modules
+coverage/
+npm-debug.log
+.package.json
+package-lock.json
+output.md
+output/
+lib/
+lib-doc/
+.DS_Store
+creds.json
+.env
+CREATOR.md
