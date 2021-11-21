@@ -6,6 +6,7 @@
 1. Create the Telegram bot via BotFather
 2. Create the Google api keys
 3. Configure the bot backend
+4. How it works
 
 ### 1 Create telegram bot
 
@@ -48,3 +49,27 @@ xenmayer/geek-expenses-telegram-bot:latest
 ```
 
 [The DockerHub package page](https://hub.docker.com/r/xenmayer/geek-expenses-telegram-bot)
+
+### 3 How it works
+
+It's suggested to start with the GoogleSpreadsheet document with list named e.g. `empty`.
+
+![image](https://user-images.githubusercontent.com/3073695/142761568-e0aabc0f-633e-4772-b10d-62c8c12f5337.png)
+
+
+Once when the bot is starts by the `docker run` or the `npm run start`. It opens the GoogleSpreadsheet file and tries to find the YEAR named list, for instance `2021`. If it does, it is just starts serving the bot and waiting for commands. If it doesn't, it creates such list and adds basic expenses spreadsheed template.
+
+![image](https://user-images.githubusercontent.com/3073695/142761489-ef6dfe90-3e3b-46f4-b4e7-306bdcef36d7.png)
+
+
+The bot has one command `/store` shows the expenses categories selection menu.
+
+![image](https://user-images.githubusercontent.com/3073695/142761013-5a8c8ca7-f33d-48c0-97a3-ff16f8a6efec.png)
+
+After selection of the category it waits the amount message. And adds the value to the required cell in the GoogleSpreadsheet file.
+
+![image](https://user-images.githubusercontent.com/3073695/142761137-d6ffa057-1444-4265-974f-25b7342f2495.png)
+
+![image](https://user-images.githubusercontent.com/3073695/142761277-1e0ba63e-9b2e-4b52-8a79-4aea7499ec9e.png)
+
+
