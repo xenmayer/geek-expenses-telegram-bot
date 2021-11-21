@@ -3,12 +3,12 @@
 
 ## Steps to deploy your own expense tracking bot
 
-1. Create the Telegram bot via BotFather
-2. Create the Google api keys
-3. Configure the bot backend
-4. How it works
+1. [Create the Telegram bot via BotFather](#1-create-the-telegram-bot-via-botfather)
+2. [Create the Google api keys](#2-create-google-api-keys)
+3. [Configure the bot backend](#3-configure-the-bot-backend)
+4. [How it works](#4-how-it-works)
 
-### 1 Create telegram bot
+### 1 Create the Telegram bot via BotFather
 
 [The official description of creation](https://core.telegram.org/bots)
 
@@ -50,7 +50,7 @@ xenmayer/geek-expenses-telegram-bot:latest
 
 [The DockerHub package page](https://hub.docker.com/r/xenmayer/geek-expenses-telegram-bot)
 
-### 3 How it works
+### 4 How it works
 
 It's suggested to start with the GoogleSpreadsheet document with list named e.g. `empty`.
 
