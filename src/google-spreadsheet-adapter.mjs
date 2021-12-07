@@ -10,9 +10,9 @@ import {googleCredsPath, googleSheetId} from "./config.mjs"
 
 /**
  * @param {Translation} translation
- * @returns {{storeExpense: Promise<void>}}
+ * @returns {Promise<{storeExpense: Promise<void>}>}
  */
-export async function initGoogleStorage(translation) {
+export async function initGoogleSpreadsheetAdapter(translation) {
     const {
         expenseCategories, expenseCategoryTitle, months, totalTitle
     } = translation
