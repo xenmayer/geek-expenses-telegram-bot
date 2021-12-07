@@ -1,7 +1,7 @@
 {
-  "name": "money-bot",
-  "version": "0.1.0",
-  "description": "",
+  "name": "geek-expenses-telegram-bot",
+  "version": "0.1.1",
+  "description": "The Telegram bot with the GoogleSpreadsheet as a database",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,13 +12,15 @@
   "lint-staged": {
     "*.js": "eslint --fix"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "money-bot"
+  ],
+  "author": "Nikita Vasilchenko <xenmayer@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
     "google-spreadsheet": "^3.2.0",
-    "node-telegram-bot-api": "^0.53.0"
+    "node-telegram-bot-api": "^0.54.0"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
